@@ -1,5 +1,5 @@
 import { moveItemInArray } from '@angular/cdk/drag-drop';
-import * as utils from '../store/utils';
+import * as utils from './utils';
 import {NgSurvey} from '../models/ng-survey.model';
 import {NgSurveyState} from './ng-survey.state';
 import {

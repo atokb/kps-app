@@ -52,7 +52,7 @@ export class ShellComponent implements OnInit {
   logout() {
     this.authService.doLogout()
     .then((res) => {
-      this.location.back();
+      this.location.path(true);
     }, (error) => {
       console.log('Logout error', error);
     });

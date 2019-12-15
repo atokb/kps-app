@@ -26,7 +26,7 @@ export class BuilderViewerContainerComponent implements OnInit {
         callback: this.importSurvey.bind(this),
       },
       surveyButtons: [{
-        title: 'Save Survey to DB',
+        title: 'Save',
         icon: 'fas fa-save',
         text: 'Save',
         callback: this.saveSurvey,
@@ -35,7 +35,7 @@ export class BuilderViewerContainerComponent implements OnInit {
         callback: this.importElement.bind(this),
       },
       elementButtons: [{
-        title: 'Save Element to DB',
+        title: 'Save Element',
         icon: 'fas fa-save',
         text: 'Save',
         callback: this.saveElement,

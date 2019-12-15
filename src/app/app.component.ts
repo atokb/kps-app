@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NgSurveysService, NgSurveyState, INgSurvey, IPageMap, IElementsMaps, IOptionAnswersMaps} from 'ng-surveys';
+import { AuthService } from './core/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,12 @@ export class AppComponent implements OnInit {
   optionAnswers: IOptionAnswersMaps;
 
   constructor(
-    private ngSurveys$: NgSurveysService,
+    private ngSurveys$: NgSurveysService, private auth: AuthService
   ) {}
+
+  logout() {
+    this.auth.doLogout();
+  }
 
   ngOnInit() {
     this.ngSurveys$.getNgSurveyState().subscribe(res => {

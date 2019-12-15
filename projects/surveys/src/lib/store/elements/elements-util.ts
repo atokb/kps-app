@@ -7,7 +7,7 @@ import {
   arrayToMap,
 } from '../utils';
 import {IParagraph, Paragraph} from '../../models';
-import * as utils from '../../store/utils';
+import * as utils from '../utils';
 
 export function createNextElement(pageId: string, elements: IElementsMap, type: string): IElementsMap {
   let newElement: IElements = new Elements(pageId);

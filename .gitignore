@@ -23,6 +23,8 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
+
 
 # misc
 /.sass-cache
@@ -38,5 +40,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/documentation
-/.firebase
+environments/environment.ts
+
