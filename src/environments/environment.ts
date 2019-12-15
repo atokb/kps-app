@@ -5,7 +5,7 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: 'AIzaSyBk6QRMH10cIVX82d31p29UxP2nUtpszCc',
+    apiKey: '',
     authDomain: 'kps-app-41271.firebaseapp.com',
     databaseURL: 'https://kps-app-41271.firebaseio.com',
     projectId: 'kps-app-41271',
