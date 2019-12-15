@@ -1,0 +1,24 @@
+// Components
+@import "components/shadow";
+@import "components/text";
+
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+}
+
+.nav-pills {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 5% 10%;
+}
+
+.bg-grey {
+  background-color: #f1f1f1 !important;
+}
+
+#question-builder-container {
+  padding: 2%;
+}

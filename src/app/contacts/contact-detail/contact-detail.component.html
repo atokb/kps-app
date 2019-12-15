@@ -1,0 +1,17 @@
+<div class="row panel panel-default list-group-item">
+    <div class="col-xs-12 list-group-item panel-heading">
+        <h2>{{ contact.name }}</h2>
+        <div class="pull-left">
+            <img [src]="contact?.imageUrl" alt="{{ contact.name }}" class="img-responsive" style="max-height: 100px;">
+        </div>
+        <div class="pull-right btn-toolbar">
+            <a routerLink="edit" class="btn btn-primary" role="button">Edit</a>
+            <a class="btn btn-danger" role="button" (click)="onDelete()">Delete</a>
+        </div>
+    </div>
+    <div class="col-xs-12 list-group-item panel-body">
+        <p class="list-group-item-text">Email: {{ contact?.email }}</p>
+        <p class="list-group-item-text">Phone: {{ contact?.phone }}</p>
+    </div>
+</div>
+<!-- <hr> -->

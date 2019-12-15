@@ -1,0 +1,30 @@
+<app-surveys-navbar></app-surveys-navbar>
+<div id="content" class="container-fluid">
+    <div>
+        <div class="row">
+            <div class="col-md-3 col-12 mb-5">
+                <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link" id="builder-tab" data-toggle="pill" routerLink="/builder" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" role="tab" aria-controls="builder" aria-selected="true">
+            Create Survey
+          </a>
+                    <a class="nav-link" id="viewer-tab" data-toggle="pill" routerLink="/viewer" routerLinkActive="active" role="tab" aria-controls="viewer" aria-selected="false">
+            View Survey
+          </a>
+                    <a class="nav-link" id="model-tab" data-toggle="pill" routerLink="/contact" routerLinkActive="active" role="tab" aria-controls="model" aria-selected="false">
+            Contacts
+          </a>
+                    <a class="nav-link" id="model-tab" data-toggle="pill" (click)="logout()" routerLinkActive="active" role="tab" aria-controls="model" aria-selected="false">Logout</a>
+
+                </div>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="card bg-grey">
+                    <div class="card-body">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
